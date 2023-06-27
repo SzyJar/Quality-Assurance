@@ -18,8 +18,8 @@ suite('Functional Tests', function() {
         assert.equal(res.body.initUnit, 'L');
         assert.approximately(res.body.returnNum, 2.64172, 0.1);
         assert.equal(res.body.returnUnit, 'gal');
+        done();
       });
-    done();
   });
 
   test('Convert an invalid input such as 32g', function (done) {
